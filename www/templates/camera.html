@@ -1,0 +1,17 @@
+<ion-view title="Camera" id="page4">
+  <ion-content padding="true" class="has-header">
+
+    <button id="camera-button10" class="button button-stable  button-block" ng-click="camera()">Use Camera</button>
+    <button id="camera-button11" class="button button-stable  button-block" ng-click="pick()">Open Library</button>
+   
+    <img ng-src="{{image}}" class="full-image" id="myImage" />
+   
+    <label class="item item-input item-stacked-label">
+	    <span class="input-label">Caption</span>
+	    <textarea placeholder="Add description" ng-model="data.caption"></textarea>
+	</label>
+
+    <button ui-sref="tabsController.home" id="camera-button12" class="button button-stable  button-block">Upload Photo</button>
+
+  </ion-content>
+</ion-view>
